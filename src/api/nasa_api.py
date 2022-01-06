@@ -1,6 +1,7 @@
 from src.api.api_client import ApiClient
 
-class ApiNasa:
+
+class NasaAPI:
     api_url = 'https://api.nasa.gov/'
     api_key = 'HAjFqcLlRWvvQWR9DaxufozPTcbbxMidB5qY6uDO'
     api_client = ApiClient(api_url)
