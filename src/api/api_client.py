@@ -18,8 +18,8 @@ class ApiClient:
         :return: Respuesta del servicio
         """
         request_url = self.url + path
-        self.log.info(f'Get to {request_url}')
         response = requests.get(url=request_url, params=params, headers=headers)
+        self.log.info(f'Get to {response.url}')
         self.log.info(f'status code: {response.status_code}')
         self.log.info(f'response: {response.json()}')
         return response
@@ -34,8 +34,8 @@ class ApiClient:
         :return: Respuesta del servicio
         """
         request_url = self.url + path
-        self.log.info(f'Post to {request_url}')
         response = requests.post(url=request_url, data=body, params=params, headers=headers)
+        self.log.info(f'Post to {response.url}')
         self.log.info(f'status code: {response.status_code}')
         self.log.info(f'response: {response.json()}')
         return response
@@ -50,8 +50,8 @@ class ApiClient:
         :return: Respuesta del servicio
         """
         request_url = self.url + path
-        self.log.info(f'Put to {request_url}')
         response = requests.put(url=request_url, data=body, params=params, headers=headers)
+        self.log.info(f'Put to {response.url}')
         self.log.info(f'status code: {response.status_code}')
         self.log.info(f'response: {response.json()}')
         return response
@@ -65,8 +65,8 @@ class ApiClient:
         :return: Respuesta del servicio
         """
         request_url = self.url + path
-        self.log.info(f'Delete to {request_url}')
         response = requests.get(url=request_url, params=params, headers=headers)
+        self.log.info(f'Delete to {response.url}')
         self.log.info(f'status code: {response.status_code}')
         self.log.info(f'response: {response.json()}')
         return response
