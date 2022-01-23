@@ -21,3 +21,5 @@ api nasa automation
   
   ## 📍 report:
   - reporte html generado automáticamente en la ejecución.
+
+https://docs.google.com/presentation/d/1Oa33t4nSa3T408oLL66yrL3PByrP-ju8-McWOWXsO2c/edit?usp=sharing
