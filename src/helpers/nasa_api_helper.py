@@ -1,10 +1,7 @@
 from src.logger import Log
 from datetime import date
-import random
 
 class ApiHelper:
-
-    count = random.randint(1, 10)
 
     def assert_current_date(self, response):
         current_date = str(date.today())
@@ -18,6 +15,8 @@ class ApiHelper:
         assert response.status_code == 403
 
     def assert_count_parameter_is_random(self, response):
+        import random
+        count = random.randint(1, 10)
         assert len(response.json()) == self.count
         
     def assert_apod_bad_request_400(self, response):
